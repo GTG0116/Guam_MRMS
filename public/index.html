@@ -234,8 +234,8 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: MAP_STYLES[savedMapType],
-            center: [-66.5, 18.2],   // Center of Puerto Rico (approx. geographic center)
-            zoom: 7.5,               // Much higher zoom level suitable for the island
+            center: [144.8, 13.45],   // Center of Guam (longitude first, then latitude)
+            zoom: 10.5,               // Good starting zoom for the entire island + nearby waters
             projection: 'mercator'
         });
 
