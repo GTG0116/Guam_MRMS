@@ -15,10 +15,13 @@ import pytz
 import gc
 
 # --- CONFIGURATION ---
-LAT_TOP, LAT_BOT = 13.7, 13.18
-LON_LEFT, LON_RIGHT = 144.58, 145.01
+# Full MRMS Guam domain bounds (official approximate coverage)
+LAT_TOP, LAT_BOT = 18.0, 9.0
+LON_LEFT, LON_RIGHT = 140.0, 150.0
+
 OUTPUT_DIR = "public/data"
 NUM_FRAMES = 15
+
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 BUCKET_URL = "https://noaa-mrms-pds.s3.amazonaws.com"
